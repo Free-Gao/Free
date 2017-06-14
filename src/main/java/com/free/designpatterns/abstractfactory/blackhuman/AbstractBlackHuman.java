@@ -1,11 +1,13 @@
-package com.free.designpatterns.factory;
+package com.free.designpatterns.abstractfactory.blackhuman;
+
+import com.free.designpatterns.abstractfactory.Human;
 
 /**
- *  黑色人种，记得中学学英语，老师说black man是侮辱人的意思，不懂，没跟老外说话 
+ * 为什么要修改成抽象类呢？要定义性别呀 
  * @author Free
  *
  */
-public class BlackHuman implements Human{
+public abstract class AbstractBlackHuman implements Human{
 
 	public void laugh(){
 		System.out.println("黑人会笑"); 
@@ -21,5 +23,4 @@ public class BlackHuman implements Human{
 		System.out.println("黑人可以说话，一般人听不懂"); 
 
 	}
-
 }

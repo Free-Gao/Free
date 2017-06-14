@@ -1,11 +1,13 @@
-package com.free.designpatterns.factory;
+package com.free.designpatterns.abstractfactory.whitehuman;
+
+import com.free.designpatterns.abstractfactory.Human;
 
 /**
- * 白色人种
+ * 为什么要修改成抽象类呢？要定义性别呀 
  * @author Free
  *
  */
-public class WhiteHuman implements Human{
+public abstract class AbstractWhiteHuman implements Human{
 
 	public void laugh(){
 		System.out.println("白色人种会大笑，侵略的笑声");

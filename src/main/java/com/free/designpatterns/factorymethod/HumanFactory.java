@@ -1,5 +1,6 @@
-package com.free.designpatterns.factory;
+package com.free.designpatterns.factorymethod;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 
@@ -12,14 +13,23 @@ import java.util.Random;
  * @author Free
  *
  */
+@SuppressWarnings("all")
 public class HumanFactory{
+	// 定义一个 MAP, 初始化过的 Human 对象都放在这里
+	private static HashMap<String, Human> humans = new HashMap<String, Human>();
 	
 	//定一个烤箱，泥巴塞进去，人就出来，这个太先进了
 	public static Human createHuman(Class c){
 		Human human = null;  //定义一个类型的人类 
 		
 		try{
-			human = (Human)Class.forName(c.getName()).newInstance();//产生一个 人种
+			if(humans.containsKey(c.getSimpleName())){
+				humans.get(c.getSimpleName());
+			}else{
+				human = (Human)Class.forName(c.getName()).newInstance();//产生一个 人种
+				humans.put(c.getSimpleName(), human);
+			}
+			
 		}catch (InstantiationException e){ //你要是不说个人种颜色的话，没法烤，要白的 黑，你说话了才好烤
 			System.out.println("必须指定人种的颜色"); 
 		}catch (IllegalAccessException e){ //定义的人种有问题，那就烤不出来了，这是...

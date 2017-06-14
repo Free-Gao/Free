@@ -1,4 +1,4 @@
-package com.free.designpatterns.factory;
+package com.free.designpatterns.factorymethod;
 
 import java.io.File;
 import java.io.IOException;

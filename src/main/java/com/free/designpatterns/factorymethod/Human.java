@@ -1,4 +1,4 @@
-package com.free.designpatterns.factory;
+package com.free.designpatterns.factorymethod;
 
 /**
  * 定义一个人类的统称

@@ -1,4 +1,4 @@
-package com.free.designpatterns.factory;
+package com.free.designpatterns.factorymethod;
 
 /**
  * 黄色人种，这个翻译的不准确，将就点吧 

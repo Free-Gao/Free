@@ -1,4 +1,4 @@
-package com.free.designpatterns.factory;
+package com.free.designpatterns.factorymethod;
 
 /**
  *  首先定义女娲，这真是额的神呀 
