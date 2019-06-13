@@ -2,7 +2,7 @@ package com.free.designpatterns.decorator;
 
 
 /**
- *装饰类，我要把我的成绩单装饰一
+ *装饰类，我要把我的成绩单装饰一下
  * @author Free
  *
  */

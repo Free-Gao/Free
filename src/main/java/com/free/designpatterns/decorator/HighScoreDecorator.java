@@ -13,9 +13,9 @@ public class HighScoreDecorator extends Decorator{
 		super(sr);
 	}
 
-	//我要汇报高成绩 
+	//我要汇报最高成绩 
 	private void reportHighScore(){
-		System.out.println("这次考试语文高是75，数学是78，自然是80"); 
+		System.out.println("这次考试语文最高分是75，数学最高分是78，自然最高分是80"); 
 	}
 	
 	//高成绩我要做老爸看成绩单前告诉他，否则等他一看，就抡起笤帚有揍我，我那还有机会说呀 
